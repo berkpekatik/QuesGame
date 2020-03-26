@@ -1,25 +1,37 @@
 [{
   "id": 1,
   "question": "ehmm, which member is the GOD role in the discord ?",
-  "answer": "vols"
+  "answer": "vols",
+  "success": "congrats!!",
+  "failed": "srsly dude??!!",
 },{
   "id": 2,
   "question": "whoa, you are going great naisuu shall we make more real ?",
-  "answer": "yes"
+  "answer": "yes",
+  "success": "vols",
+  "failed": "srsly dude??!!",
 },{
   "id": 3,
-  "question": null,
-  "answer": null
+  "question": "when is discord's establishment date? write as day/month/year.",
+  "answer": "",
+  "success": "vols",
+  "failed": "srsly dude??!!",
 },{
   "id": 4,
   "question": null,
-  "answer": null
+  "answer": null,
+  "success": "vols",
+  "failed": "srsly dude??!!",
 },{
   "id": 5,
   "question": null,
-  "answer": null
+  "answer": null,
+  "success": "vols",
+  "failed": "srsly dude??!!",
 },{
   "id": 6,
   "question": null,
-  "answer": null
+  "answer": null,
+  "success": "vols",
+  "failed": "srsly dude??!!",
 },]
