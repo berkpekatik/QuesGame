@@ -1,0 +1,7 @@
+C:\Users\vNoisy\source\repos\noname\noname\bin\Debug\noname.exe.config
+C:\Users\vNoisy\source\repos\noname\noname\bin\Debug\noname.exe
+C:\Users\vNoisy\source\repos\noname\noname\bin\Debug\noname.pdb
+C:\Users\vNoisy\source\repos\noname\noname\bin\Debug\Newtonsoft.Json.dll
+C:\Users\vNoisy\source\repos\noname\noname\obj\Debug\noname.csproj.CopyComplete
+C:\Users\vNoisy\source\repos\noname\noname\obj\Debug\noname.exe
+C:\Users\vNoisy\source\repos\noname\noname\obj\Debug\noname.pdb
