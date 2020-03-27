@@ -13,10 +13,22 @@ namespace noname
         public static Animation ani = new Animation();
         static void Introducing()
         {
-            ani.Spell("hi " + ani.GetMachineName() + ",", 50, ConsoleColor.White);
-            ani.Spell("we have a lot of question for you!", 50, ConsoleColor.White);
-            ani.Spell("do you know the VAG members ? so if you know the members thats easy for you.", 50, ConsoleColor.White);
-            ani.Spell("lets shall we begin.", 50, ConsoleColor.White);
+            int currentQ = Properties.Settings.Default.currentQuestionId;
+            if (currentQ >= 1)
+            {
+                SendKeys.SendWait("{F11}");
+                ani.Spell("oh dear welcome back! " + ani.GetMachineName() + ",", 50, ConsoleColor.White);
+                ani.Answer(currentQ);
+            }
+            else
+            {
+                ani.Spell("hi " + ani.GetMachineName() + ",", 50, ConsoleColor.White);
+                ani.Spell("we have a lot of question for you!", 50, ConsoleColor.White);
+                ani.Spell("do you know the VAG members ? so if you know the members thats easy for you.", 50, ConsoleColor.White);
+                ani.Spell("lets shall we begin.", 50, ConsoleColor.White);
+                SendKeys.SendWait("{F11}");
+                ani.Answer(1);
+            }
         }
         static void Main(string[] args)
         {
@@ -30,7 +42,6 @@ namespace noname
             ani.ClearCurrentConsoleLine();
 
             Introducing();
-            ani.Answer(1);
         }
     }
 }

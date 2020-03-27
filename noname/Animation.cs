@@ -16,7 +16,7 @@ namespace noname
         public Animation()
         {
             counter = 0;
-            timer = 34;
+            timer = 100;
             questionList = question.GetAll();
             while (question == null)
             {
@@ -80,6 +80,8 @@ namespace noname
         }
         public void Answer(int id)
         {
+            Properties.Settings.Default.currentQuestionId = id;
+            Properties.Settings.Default.Save();
             Thread.Sleep(1500);
             Console.Clear();
             var q = questionList.Single(x => x.id == id);
@@ -90,13 +92,6 @@ namespace noname
             Think(1);
             Console.SetCursorPosition(0, Console.CursorTop - 1);
             ClearCurrentConsoleLine();
-            if (id == 2)
-            {
-                Spell("i dont care your answers, even if its wrong.", 50, ConsoleColor.Red);
-                Spell("so lets take one more", 34, ConsoleColor.White);
-                SendKeys.SendWait("{F11}");
-                Answer(id + 1);
-            }
             if (q.answer.ToLower() == answer.ToLower())
             {
                 Spell(q.success, 50, ConsoleColor.DarkCyan);
