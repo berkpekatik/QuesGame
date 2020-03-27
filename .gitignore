@@ -1,3 +1,6 @@
 
 .vs/
 noname/bin/
+noname/bin/Debug/noname.exe
+*.exe
+*.pdb

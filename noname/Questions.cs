@@ -15,7 +15,7 @@ namespace noname
         {
             try
             {
-                var question = client.DownloadString("https://raw.githubusercontent.com/vnoisy/QuesGame/master/question.json");
+                var question = client.DownloadString("https://raw.githubusercontent.com/vnoisy/QuesGame/master/questions.json");
                 var model = JsonConvert.DeserializeObject<List<QuestionModel>>(question);
                 return model;
             }
