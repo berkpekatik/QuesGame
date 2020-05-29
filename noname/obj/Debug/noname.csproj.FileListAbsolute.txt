@@ -15,3 +15,14 @@ C:\Users\vNoisy\source\QuesGame\noname\obj\Debug\noname.exe
 C:\Users\vNoisy\source\QuesGame\noname\obj\Debug\noname.pdb
 C:\Users\vNoisy\source\QuesGame\noname\obj\Debug\noname.Properties.Resources.resources
 C:\Users\vNoisy\source\QuesGame\noname\obj\Debug\noname.csproj.GenerateResource.cache
+C:\Users\Mucella\Source\Repos\vnoisy\QuesGame\noname\bin\Debug\noname.exe.config
+C:\Users\Mucella\Source\Repos\vnoisy\QuesGame\noname\bin\Debug\noname.exe
+C:\Users\Mucella\Source\Repos\vnoisy\QuesGame\noname\bin\Debug\noname.pdb
+C:\Users\Mucella\Source\Repos\vnoisy\QuesGame\noname\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Mucella\Source\Repos\vnoisy\QuesGame\noname\obj\Debug\noname.csprojAssemblyReference.cache
+C:\Users\Mucella\Source\Repos\vnoisy\QuesGame\noname\obj\Debug\noname.Properties.Resources.resources
+C:\Users\Mucella\Source\Repos\vnoisy\QuesGame\noname\obj\Debug\noname.csproj.GenerateResource.cache
+C:\Users\Mucella\Source\Repos\vnoisy\QuesGame\noname\obj\Debug\noname.csproj.CoreCompileInputs.cache
+C:\Users\Mucella\Source\Repos\vnoisy\QuesGame\noname\obj\Debug\noname.csproj.CopyComplete
+C:\Users\Mucella\Source\Repos\vnoisy\QuesGame\noname\obj\Debug\noname.exe
+C:\Users\Mucella\Source\Repos\vnoisy\QuesGame\noname\obj\Debug\noname.pdb

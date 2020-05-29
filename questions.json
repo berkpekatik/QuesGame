@@ -18,20 +18,8 @@
   "failed": "dont be sad, its a hard question :(",
 },{
   "id": 4,
-  "question": null,
-  "answer": null,
-  "success": "vols",
-  "failed": "srsly dude??!!",
-},{
-  "id": 5,
-  "question": null,
-  "answer": null,
-  "success": "vols",
-  "failed": "srsly dude??!!",
-},{
-  "id": 6,
-  "question": null,
-  "answer": null,
-  "success": "vols",
-  "failed": "srsly dude??!!",
-},]
+  "question": "king of the ordu",
+  "answer": "asrýn",
+  "success": "make some fýndük",
+  "failed": "fck off",
+}]

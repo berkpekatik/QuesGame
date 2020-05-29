@@ -32,7 +32,7 @@ namespace noname
         }
         static void Main(string[] args)
         {
-            ani.SpellWithNoSpace("can you wait a sec, i check my args...", 50, ConsoleColor.Green);
+            ani.SpellWithNoSpace("can you wait a sec, checkin my args...", 50, ConsoleColor.Green);
             ani.Think(2);
             Console.SetCursorPosition(0, Console.CursorTop - 1);
             ani.ClearCurrentConsoleLine();
