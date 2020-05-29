@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading;
@@ -42,6 +43,47 @@ namespace noname
             ani.ClearCurrentConsoleLine();
 
             Introducing();
+            NextStep();
+        }
+
+        private static void NextStep()
+        {
+            ani.SpellWithNoSpace("i creatin new file on ur desktop", 50, ConsoleColor.Green);
+            ani.Think(3);
+            FileCreateAndWrite(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\B_A_S_E_6_4.txt", Encode("berkcan").ToString());            
+            ani.Spell("you have 300 sec solve for this puzzle, hurry!", 50, ConsoleColor.Green);
+            var newTime = DateTime.Now.AddMinutes(5).Ticks;
+            int i = 0;
+            while (true)
+            {
+                i++;
+                ani.ClearCurrentConsoleLine();
+                ani.SpellWithNoSpace(i.ToString(), 50);
+                Thread.Sleep(1000);
+                if (DateTime.Now.Ticks >= newTime)
+                {
+                    break;
+                }
+            }
+        }
+        private static string Decode(string text)
+        {
+            var data = Convert.FromBase64String(text);
+            return Encoding.UTF8.GetString(data);
+        }
+        private static string Encode(string text)
+        {
+            var data = Encoding.UTF8.GetBytes(text);
+            return Convert.ToBase64String(data);
+        }
+        private static void FileCreateAndWrite(string path, string text)
+        {
+            if (File.Exists(path))
+            {
+                File.Delete(path);
+            }
+
+            File.WriteAllText(path, text);
         }
     }
 }

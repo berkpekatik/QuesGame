@@ -50,7 +50,7 @@ namespace noname
             }
             Console.WriteLine();
         }
-        public void SpellWithNoSpace(string text, int timer, ConsoleColor color)
+        public void SpellWithNoSpace(string text, int timer, ConsoleColor color = ConsoleColor.White)
         {
             if (text == "" || text == null)
             {
@@ -78,12 +78,20 @@ namespace noname
             }
             Console.WriteLine();
         }
-        public void Answer(int id)
+        private void SaveAnswer(int id)
         {
             Properties.Settings.Default.currentQuestionId = id;
             Properties.Settings.Default.Save();
+        }
+        public void Answer(int id)
+        {
+            SaveAnswer(id);
             Thread.Sleep(1500);
             Console.Clear();
+            if (id > questionList.Count())
+            {
+                return;
+            }
             var q = questionList.Single(x => x.id == id);
             Spell(q.question, 50, ConsoleColor.Green);
             Console.ForegroundColor = ConsoleColor.White;
