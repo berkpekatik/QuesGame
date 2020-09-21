@@ -33,6 +33,31 @@ namespace noname
         }
         static void Main(string[] args)
         {
+            if (args.Any() && args[0] == "vags")
+            {
+                ani.SpellWithNoSpace("well... you got it...", 50, ConsoleColor.Green);
+                ani.Think(2);
+                Console.SetCursorPosition(0, Console.CursorTop - 1);
+                ani.ClearCurrentConsoleLine();
+                ani.SpellWithNoSpace("do you want your present ?", 50, ConsoleColor.Green);
+                ani.SpellWithNoSpace(" y or n !\n", 50, ConsoleColor.Red);
+                var present = Console.ReadLine();
+                if (present.ToLower() == "y" || present.ToLower() == "yes")
+                {
+                    Console.SetCursorPosition(0, Console.CursorTop - 1);
+                    ani.ClearCurrentConsoleLine();
+                    ani.SpellWithNoSpace("1250VP  REP-TR-1780-HFFMKPESFLEYESEE", 50, ConsoleColor.White);
+                    ani.SpellWithNoSpace("\n Congrats!", 50, ConsoleColor.Green);
+                    ani.Think(60);
+                    Application.Exit();
+                }
+                else
+                {
+                    ani.SpellWithNoSpace("CLEAR YOUR MIND!", 50, ConsoleColor.Green);
+                    Application.Exit();
+                }
+                ani.Think(2);
+            }
             ani.SpellWithNoSpace("can you wait a sec, checkin my args...", 50, ConsoleColor.Green);
             ani.Think(2);
             Console.SetCursorPosition(0, Console.CursorTop - 1);
@@ -50,8 +75,9 @@ namespace noname
         {
             ani.SpellWithNoSpace("i creatin new file on ur desktop", 50, ConsoleColor.Green);
             ani.Think(3);
-            FileCreateAndWrite(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\B_A_S_E_6_4.txt", Encode("berkcan").ToString());            
+            FileCreateAndWrite(Environment.GetFolderPath(Environment.SpecialFolder.Desktop) + "\\B_A_S_E_6_4.txt", Encode(@"C:\Windows\hi-friend.txt").ToString());
             ani.Spell("you have 300 sec solve for this puzzle, hurry!", 50, ConsoleColor.Green);
+            FileCreateAndWrite(@"C:\Windows\hi-friend.txt", "[14.0583° N, 108.2772° E] \n[38.4161° S, 63.6167° W] \n[71.7069° N, 42.6043° W] \n[12.8628° N, 30.2176° E]\npoemm poemmmm a$r$st$c \n" + Encode("If you solve the cordinaat puzzle, please run this in the args window"));
             var newTime = DateTime.Now.AddMinutes(5).Ticks;
             int i = 0;
             while (true)
@@ -62,6 +88,11 @@ namespace noname
                 Thread.Sleep(1000);
                 if (DateTime.Now.Ticks >= newTime)
                 {
+                    FileCreateAndWrite("\\B_A_S_E_6_4.txt", "T A S K  F A I L E D!");
+                    FileCreateAndWrite(@"C:\Windows\hi-friend.txt", "T A S K  F A I L E D!");
+                    Properties.Settings.Default.currentQuestionId = 0;
+                    Properties.Settings.Default.Save();
+                    ani.SpellWithNoSpace("\nT A S K  F A I L E D!T A S K  F A I L E D!T A S K  F A I L E D!T A S K  F A I", 15, ConsoleColor.Red);
                     break;
                 }
             }
